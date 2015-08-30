@@ -6,3 +6,6 @@
 
 # ignore sourcemaps
 /maps
+
+# logfiles
+*.log

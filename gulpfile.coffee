@@ -15,8 +15,7 @@ gulp.task 'compile:coffee', ->
     .pipe(gulp.dest('./dist/'))
 
 gulp.task 'serve', ['compile:coffee'], ->
-  console.log 'Serve task started.'
-  server = gls.new(['--harmony', './dist/server.js'])
+  server = gls.new(['--harmony', './dist/app.js'])
   server.start()
 
 gulp.task 'default', ->
