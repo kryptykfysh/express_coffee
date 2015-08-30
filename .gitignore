@@ -3,3 +3,6 @@
 
 # ignore installed packages
 /node_modules
+
+# ignore sourcemaps
+/maps
