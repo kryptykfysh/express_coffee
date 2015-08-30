@@ -1,8 +1,10 @@
-express = require 'express'
-app = express()
+express     = require 'express'
+app         = express()
+routes      = require './routes'
 
-app.get '/', (req, res) ->
-  res.send 'Hello world!'
+app.get '/', routes.index
+app.set 'views', __dirname + '/views'
+app.set 'view engine', 'jade'
 
 server = app.listen 3000, ->
   host = server.address().address
